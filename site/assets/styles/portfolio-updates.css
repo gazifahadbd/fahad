@@ -81,21 +81,30 @@
 }
 
 @media (max-width: 920px) {
-  /* Strip padding from the outer container to stop it from stretching */
+  /* Strip outer padding and prevent sideways scrolling */
   .portfolio-additions {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-  }
-  
-  /* Apply the exact 16px margin directly to the inner text wrapper */
-  .portfolio-additions__inner {
-      padding-left: 16px !important;
-      padding-right: 16px !important;
+      padding: 32px 0 !important;
       width: 100% !important;
       box-sizing: border-box !important;
+      overflow-x: hidden !important;
   }
   
-  /* Keep sub-headings scaled down appropriately */
+  /* Force a mathematically perfect 16px gap on left and right */
+  .portfolio-additions__inner {
+      width: calc(100% - 32px) !important; 
+      margin: 0 auto !important;
+      padding: 0 !important;
+  }
+  
+  /* Ensure text doesn't hold hidden margins */
+  .portfolio-additions h2,
+  .portfolio-additions h3,
+  .portfolio-additions p {
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+  }
+  
+  /* Keep sub-heading sizes scaled down */
   .portfolio-additions h2 { font-size: 22px !important; margin-bottom: 16px !important; }
   .portfolio-additions h3 { font-size: 18px !important; }
   
