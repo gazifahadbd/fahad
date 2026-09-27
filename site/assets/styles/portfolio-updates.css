@@ -104,8 +104,8 @@
 
 @media (max-width: 920px) {
   /* Scale fonts on mobile */
-  .portfolio-additions h2 { font-size: 22px; margin-bottom: 16px; }
-  .portfolio-additions h3 { font-size: 18px; }
+.portfolio-additions h2 { font-size: 20px !important; margin-bottom: 16px !important; }
+.portfolio-additions h3 { font-size: 16px !important; margin-bottom: 12px !important; }
 
   .portfolio-additions { padding-left: 0; padding-right: 0; }
   .portfolio-additions__inner {
