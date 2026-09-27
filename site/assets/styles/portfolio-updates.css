@@ -59,7 +59,7 @@
 .portfolio-additions {
   background: #fff;
   color: #000;
-  padding: 32px 16px;
+  padding: 32px 0px;
   font-family: var(--font-secondary, 'Roboto Slab', serif);
 }
 .portfolio-additions__inner { max-width: 1192px; margin: 0 auto; }
