@@ -62,7 +62,7 @@
   padding: 32px 0px;
   font-family: var(--font-secondary, 'Roboto Slab', serif);
 }
-.portfolio-additions__inner { max-width: 1192px; margin: 0 auto; }
+.portfolio-additions__inner { max-width: 1224px; margin: 0 auto; }
 .portfolio-additions h2,
 .portfolio-additions h3,
 .portfolio-additions p { font-family: inherit; text-transform: none; letter-spacing: normal; }
@@ -79,6 +79,7 @@
   text-align: left;
 }
 @media (max-width: 920px) {
+  .portfolio-additions { padding: 32px 16px; }
   .portfolio-additions h2 { font-size: 24px; }
   .portfolio-additions h3 { font-size: 20px; }
   .page #zZBPeT > .block-layout { justify-content: center; }
