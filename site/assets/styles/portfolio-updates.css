@@ -103,12 +103,25 @@
 }
 
 @media (max-width: 920px) {
-  /* Just scale fonts on mobile, the 16px layout is handled globally above */
+  /* Scale fonts on mobile */
   .portfolio-additions h2 { font-size: 22px; margin-bottom: 16px; }
   .portfolio-additions h3 { font-size: 18px; }
-  
+
+  .portfolio-additions { padding-left: 0; padding-right: 0; }
+  .portfolio-additions__inner {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 4.444vw; /* matches the page-builder's own mobile inset */
+  }
+
   .page #zZBPeT > .block-layout { justify-content: center; }
   .page #zZBPeT .layout-element:has(.social-icons) { flex-basis: 100%; }
+}
+
+@media screen and (min-width: 361px) and (max-width: 920px) {
+  /* From 361px up the page-builder switches to a fixed 16px inset
+     instead of the vw-based one above — match that here too. */
+  .portfolio-additions__inner { padding: 0 16px; }
 }
 
 nav ul li ul li a,
