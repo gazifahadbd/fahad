@@ -56,6 +56,7 @@
 .page #zZBPeT .layout-element:has(.social-icons) { flex: 1 1 640px; order: 1; }
 .page #zZBPeT .layout-element:has(.grid-button) { order: 2; }
 .page #zZBPeT .social-icons { justify-content: center; }
+
 .portfolio-additions {
   background: #fff;
   color: #000;
@@ -78,31 +79,30 @@
   color: #000;
   text-align: left;
 }
+
 @media (max-width: 920px) {
-  /* Force exact 16px alignment and strip out all hidden double-margins */
-  .portfolio-additions { 
-      padding: 32px 16px !important; 
-      box-sizing: border-box !important;
-  }
-  .portfolio-additions__inner {
-      padding: 0 !important;
-      margin: 0 !important;
-      width: 100% !important;
-  }
-  .portfolio-additions h2,
-  .portfolio-additions h3,
-  .portfolio-additions p {
+  /* Strip padding from the outer container to stop it from stretching */
+  .portfolio-additions {
       padding-left: 0 !important;
-      margin-left: 0 !important;
+      padding-right: 0 !important;
   }
   
-  /* Keep sub-heading sizes slightly smaller than the main Research header */
+  /* Apply the exact 16px margin directly to the inner text wrapper */
+  .portfolio-additions__inner {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+  }
+  
+  /* Keep sub-headings scaled down appropriately */
   .portfolio-additions h2 { font-size: 22px !important; margin-bottom: 16px !important; }
   .portfolio-additions h3 { font-size: 18px !important; }
   
   .page #zZBPeT > .block-layout { justify-content: center; }
   .page #zZBPeT .layout-element:has(.social-icons) { flex-basis: 100%; }
 }
+
 nav ul li ul li a,
 .dropdown-menu a,
 .sub-menu a {
