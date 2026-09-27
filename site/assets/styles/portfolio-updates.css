@@ -79,13 +79,27 @@
   text-align: left;
 }
 @media (max-width: 920px) {
+  /* Force exact 16px alignment and strip out all hidden double-margins */
   .portfolio-additions { 
-      padding-left: 16px !important; 
-      padding-right: 16px !important; 
+      padding: 32px 16px !important; 
       box-sizing: border-box !important;
   }
-  .portfolio-additions h2 { font-size: 20px; }
-  .portfolio-additions h3 { font-size: 18px; }
+  .portfolio-additions__inner {
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+  }
+  .portfolio-additions h2,
+  .portfolio-additions h3,
+  .portfolio-additions p {
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+  }
+  
+  /* Keep sub-heading sizes slightly smaller than the main Research header */
+  .portfolio-additions h2 { font-size: 22px !important; margin-bottom: 16px !important; }
+  .portfolio-additions h3 { font-size: 18px !important; }
+  
   .page #zZBPeT > .block-layout { justify-content: center; }
   .page #zZBPeT .layout-element:has(.social-icons) { flex-basis: 100%; }
 }
