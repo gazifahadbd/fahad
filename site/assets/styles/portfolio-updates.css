@@ -132,11 +132,10 @@ nav ul li ul li a,
     display: block !important;
 }
 
-/* Fix desktop gap in Masters Education section --- */
-@media (min-width: 921px) {
-    #zh1COL, #zf4A7X { 
-        margin-top: -10px !important; 
-    }
+/* Fix gap in Education sections safely */
+.page #z_FU5K .text-box, 
+.page #ztjPoG .text-box {
+    margin-bottom: 0px !important;
 }
 
 /* Footer CV button hover glitch fix --- */
