@@ -156,3 +156,8 @@ nav ul li ul li a,
         margin-top: -30px !important;
     }
 }
+
+/* Add breathing room between page content and the footer */
+.page #zZBPeT {
+    margin-top: 60px !important;
+}
